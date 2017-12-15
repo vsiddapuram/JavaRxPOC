@@ -14,6 +14,7 @@ public class JavaRxDemObservableFromArray {
 		 */
 		String[] names = new String[] {"aaa","bbb","ccc","ddd"};
 		 Observable.fromArray(names).subscribe(
+				 
 				x-> System.out.println(x),
 		e->System.err.println("error"),
 		()->System.out.println("completed"));
